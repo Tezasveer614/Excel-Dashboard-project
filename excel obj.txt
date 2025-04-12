@@ -1,0 +1,36 @@
+Dashboard Objectives:
+Objective: Analyze Average Modal Prices Across Top Commodities Nationally.
+Goal: To identify which commodities generally command the highest and lowest prices across the country based on the most frequent trading price (Modal Price).
+Excel Skills Showcased: Data aggregation (PivotTables), calculating averages, sorting, creating summary charts (e.g., Bar Chart), potentially using Slicers for filtering top N commodities.
+Feasibility: Straightforward using PivotTables to average Modal_Price by Commodity.
+
+Objective: Compare Commodity Price Variation Across Different States.
+Goal: To allow users to select a specific commodity and see how its average modal price varies significantly from state to state, highlighting potential regional price differences.
+Excel Skills Showcased: PivotTables with filtering/Slicers, geographical visualization (Map Chart if appropriate, or Bar Chart comparing states), conditional formatting to highlight high/low prices.
+Feasibility: Use a Slicer for Commodity and a PivotTable/Chart showing average Modal_Price by State.
+
+Objective: Investigate Price Spread (Volatility) within Markets.
+Goal: To identify which commodities or markets exhibit the largest difference between the Minimum and Maximum price (Max_Price - Min_Price), indicating higher price volatility or wider quality ranges within a single market listing.
+Excel Skills Showcased: Creating calculated fields/columns (Price Spread = Max_Price - Min_Price), PivotTables for aggregation (e.g., average spread by Commodity or Market), data visualization (Bar Chart, potentially Box & Whisker if using newer Excel).
+Feasibility: Requires adding a helper column for the calculation, then using PivotTables.
+
+Objective: Assess the Impact of Variety and Grade on Pricing for Specific Commodities.
+Goal: To understand how different Variety and Grade classifications affect the Modal_Price for a user-selected Commodity.
+Excel Skills Showcased: Nested PivotTable analysis (Commodity > Variety > Grade), using Slicers for Commodity, creating detailed comparison charts (e.g., Clustered Bar Chart).
+Feasibility: Achievable by filtering a PivotTable for a single commodity and arranging rows by Variety and Grade.
+
+Objective: Provide a Market-Specific Price Overview.
+Goal: To allow a user to drill down into a specific Market (using filters/slicers for State, District, Market) and see the range of commodities available and their respective Min, Max, and Modal prices on that day.
+Excel Skills Showcased: Effective use of Slicers for hierarchical filtering (State -> District -> Market), displaying detailed tabular data (PivotTable or Filtered Table), possibly conditional formatting on prices within the table.
+Feasibility: Relies heavily on interactive filtering using Slicers connected to a PivotTable or a formatted table.
+Objective: Identify Top 5 Most and Least Expensive Markets for Key Commodities.
+Goal: For essential commodities (e.g., Onion, Potato, Rice - user could select), identify the specific markets (Market name) with the highest and lowest average Modal_Price.
+Excel Skills Showcased: PivotTables, sorting and filtering (Top N / Bottom N feature), using Slicers for Commodity selection, clear presentation of results (Tables or Bar Charts).
+Feasibility: Uses standard PivotTable features for ranking.
+
+Objective: Analyze Commodity Availability Across States.
+Goal: To determine which commodities are most widely available (i.e., listed in the most number of distinct Market locations) within different States or nationally.
+Excel Skills Showcased: PivotTables using "Distinct Count" aggregation on the Market column grouped by Commodity (and potentially State), data visualization (Bar chart showing count of markets per commodity).
+Feasibility: Requires using the "Distinct Count" feature in PivotTables (add the data to the Data Model if needed for older Excel versions).
+
+
